@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Signup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        #maindiv {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1877f2;
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #166fe5;
+        }
+
+        a {
+            color: #1877f2;
+            text-align: center;
+            margin-top: 15px;
+            display: block;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #hotel-signup {
+            margin-top: 10px;
+            color: #42b72a;
+        }
+
+        #hotel-signup:hover {
+            color: #36a420;
+        }
+    </style>
+</head>
+<body>
+    <div id='maindiv'>
+        <div id="div2">
+            <form action="customer-signup" method="post">
+                <h2>Customer Signup</h2>
+                <label>Name:</label>
+                <input type="text" name="name">
+                <label>E-mail:</label>
+                <input type="email" name="email">
+                <label>Mobile:</label>
+                <input type="number" name="mobile">
+                <label>Address:</label>
+                <textarea rows="3" cols="20" name="address"></textarea>
+                <label>Password:</label>
+                <input type="password" name="password">
+                <input type="submit" value="Sign Up">
+                <input type="reset" value="Reset">
+                <a href="customer-login">Already Have Account? Click here to Login</a>
+                <a href="hotel-signup" id="hotel-signup">Click here to Register as Hotel</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

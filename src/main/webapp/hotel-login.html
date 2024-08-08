@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #maindiv {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 400px;
+        }
+        #childdiv {
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            align-self: flex-start;
+            margin-bottom: 5px;
+            color: #666;
+        }
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            margin: 0 10px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        input[type="reset"] {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        input[type="reset"]:hover {
+            background-color: #e0e0e0;
+        }
+        #hotellogin {
+            display: block;
+            color: #3498db;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        #hotellogin:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="maindiv">
+        <div id="childdiv">
+            <form action='hotel-login' method="post">
+                <h2>Hotel Login</h2>
+                <label for="email">E-mail Id:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <div>
+                    <input type="submit" value="Login">
+                    <input type="reset" value="Reset">
+                </div>
+                <a href="customer-login" id="hotellogin">Click here to Login as Customer</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

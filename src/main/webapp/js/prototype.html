@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+
+
+    <script>
+        let a={
+            id:100
+        }
+        let b={
+            name:"abc"
+        } 
+        let c={
+            age:20
+        }
+//      a.__proto__=b; 
+//      b.__proto__=c;
+//         console.log(a.name);
+
+
+//         b.__proto__={
+//        color:"red"
+//         }
+//    console.log(b.color);
+//    console.log(a.color);
+//         console.log(b);
+//         console.log(c);
+
+c.__proto__=a;
+console.log(c.id);
+    </script>
+</body>
+</html>

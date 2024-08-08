@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Signup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        #maindiv {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 400px;
+        }
+        #div2 {
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        label {
+            margin-bottom: 5px;
+            color: #666;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            width: auto;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        input[type="reset"] {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        input[type="reset"]:hover {
+            background-color: #e0e0e0;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id='maindiv'>
+        <div id="div2">
+            <form action='hotel-signup' method="post">
+                <h2>Hotel Signup</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mobile">Mobile:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+                
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="gst">GST:</label>
+                <input type="text" id="gst" name="gst" required>
+                
+                <div>
+                    <input type="submit" value="Sign Up">
+                    <input type="reset" value="Reset">
+                </div>
+                
+                <a href="hotel-login">Already Have Account? Click here to Login</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
